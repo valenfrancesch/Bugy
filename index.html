@@ -9,16 +9,13 @@
       UnityLoader.instantiate("unityContainer", "Build/Bugy Final.json");
     </script>
     <script>
-      var width = window.innerWidth
-    || document.documentElement.clientWidth
-    || document.body.clientWidth;
-
-    var height = window.innerHeight
-    || document.documentElement.clientHeight
-    || document.body.clientHeight;
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        document.getElementById("unityContainer").style.width = w;
+        document.getElementById("unityContainer").style.height = h;
     </script>
   </head>
   <body>
-    <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+    <div id="unityContainer" style="margin: auto"></div>
   </body>
 </html>
